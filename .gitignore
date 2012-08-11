@@ -13,3 +13,4 @@
 
 #Eagle temporary files
 *.?#?
+.DS_Store
