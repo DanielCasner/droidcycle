@@ -14108,14 +14108,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <part name="LEDS" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
-<part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
-<part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="CA" library="con-amp-quick" deviceset="M06" device=""/>
@@ -14211,38 +14203,40 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </part>
 <part name="SPEED" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2-KIT"/>
 <part name="CADENCE" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-2-KIT"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0204/5" value="1M"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0204/5" value="36k"/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="P+17" library="supply1" deviceset="V+" device=""/>
+<part name="R1" library="rcl" deviceset="R-US_" device="0204/5" value="1M"/>
+<part name="R2" library="rcl" deviceset="R-US_" device="0204/5" value="25k"/>
+<part name="GND32" library="supply1" deviceset="GND" device=""/>
+<part name="P+1" library="supply1" deviceset="V+" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-27.94" y="71.12" size="5.08" layer="97">Head lights</text>
+<text x="134.62" y="73.66" size="5.08" layer="97">Tail lights</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="2.54" y="114.3"/>
-<instance part="U2" gate="G$1" x="60.96" y="114.3"/>
+<instance part="U1" gate="G$1" x="-38.1" y="114.3"/>
+<instance part="U2" gate="G$1" x="20.32" y="114.3"/>
 <instance part="U3" gate="G$1" x="119.38" y="114.3"/>
 <instance part="U4" gate="G$1" x="175.26" y="114.3"/>
 <instance part="U$1" gate="G$1" x="-5.08" y="269.24"/>
 <instance part="GND1" gate="1" x="-50.8" y="292.1" rot="R270"/>
-<instance part="U$2" gate="G$1" x="-5.08" y="198.12"/>
-<instance part="P+2" gate="1" x="2.54" y="144.78"/>
-<instance part="P+3" gate="1" x="60.96" y="144.78"/>
+<instance part="U$2" gate="G$1" x="15.24" y="205.74"/>
+<instance part="P+2" gate="1" x="-38.1" y="144.78"/>
+<instance part="P+3" gate="1" x="20.32" y="144.78"/>
 <instance part="P+4" gate="1" x="119.38" y="144.78"/>
-<instance part="GND3" gate="1" x="2.54" y="83.82"/>
-<instance part="GND4" gate="1" x="60.96" y="83.82"/>
+<instance part="GND3" gate="1" x="-38.1" y="83.82"/>
+<instance part="GND4" gate="1" x="20.32" y="83.82"/>
 <instance part="GND5" gate="1" x="119.38" y="83.82"/>
 <instance part="GND6" gate="1" x="175.26" y="83.82"/>
 <instance part="P+5" gate="1" x="175.26" y="144.78"/>
 <instance part="LEDS" gate="G$1" x="218.44" y="55.88" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="43.18" y="292.1" rot="R270"/>
 <instance part="P+6" gate="1" x="-58.42" y="294.64"/>
-<instance part="R1" gate="G$1" x="-20.32" y="137.16" rot="R90"/>
-<instance part="P+1" gate="1" x="-20.32" y="144.78"/>
-<instance part="R2" gate="G$1" x="38.1" y="137.16" rot="R90"/>
-<instance part="P+7" gate="1" x="38.1" y="144.78"/>
-<instance part="R3" gate="G$1" x="96.52" y="137.16" rot="R90"/>
-<instance part="R4" gate="G$1" x="152.4" y="137.16" rot="R90"/>
-<instance part="P+8" gate="1" x="96.52" y="144.78"/>
-<instance part="P+9" gate="1" x="152.4" y="144.78"/>
 <instance part="R5" gate="G$1" x="187.96" y="170.18" rot="R90"/>
 <instance part="+3V2" gate="G$1" x="187.96" y="177.8"/>
 <instance part="CA" gate="G$1" x="-248.92" y="256.54" rot="MR180"/>
@@ -14352,6 +14346,14 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </instance>
 <instance part="SPEED" gate="G$1" x="-251.46" y="127"/>
 <instance part="CADENCE" gate="G$1" x="-251.46" y="111.76"/>
+<instance part="R18" gate="G$1" x="66.04" y="144.78" rot="R90"/>
+<instance part="R19" gate="G$1" x="66.04" y="129.54" rot="R90"/>
+<instance part="GND31" gate="1" x="66.04" y="121.92"/>
+<instance part="P+17" gate="1" x="66.04" y="152.4"/>
+<instance part="R1" gate="G$1" x="-91.44" y="144.78" rot="R90"/>
+<instance part="R2" gate="G$1" x="-91.44" y="129.54" rot="R90"/>
+<instance part="GND32" gate="1" x="-91.44" y="121.92"/>
+<instance part="P+1" gate="1" x="-91.44" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -14539,6 +14541,14 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <pinref part="X_BREAK_L" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -14557,24 +14567,32 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <pinref part="U4" gate="G$1" pin="V+"/>
 <pinref part="P+5" gate="1" pin="V+"/>
 </segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="P+17" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="P+1" gate="1" pin="V+"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="LED_C"/>
-<wire x1="20.32" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="101.6" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="101.6" x2="-15.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="101.6" x2="-15.24" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="LEDS" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="45.72" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="45.72" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="45.72" x2="213.36" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="LED_C"/>
-<wire x1="78.74" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="101.6" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="LEDS" gate="G$1" pin="3"/>
-<wire x1="83.82" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="43.18" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14600,21 +14618,21 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="20.32" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="111.76" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="111.76" x2="-7.62" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="111.76" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="LEDS" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="63.5" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="LED_A"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="LED_A"/>
-<wire x1="78.74" y1="111.76" x2="88.9" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="111.76" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="111.76" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="LEDS" gate="G$1" pin="4"/>
-<wire x1="88.9" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14708,22 +14726,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="P+7" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="P+8" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="OA1" gate="G$1" pin="V+"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
 </segment>
@@ -14758,34 +14760,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <pinref part="PTC3" gate="1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SHDN"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="132.08" x2="-15.24" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SHDN"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="SHDN"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="132.08" x2="157.48" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="SHDN"/>
-<wire x1="38.1" y1="132.08" x2="43.18" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="/LED_FAULT" class="0">
 <segment>
 <wire x1="-66.04" y1="284.48" x2="-38.1" y2="284.48" width="0.1524" layer="91"/>
@@ -14801,19 +14775,18 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <wire x1="157.48" y1="127" x2="147.32" y2="127" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="127" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="/OPEN_LED"/>
-<wire x1="43.18" y1="127" x2="33.02" y2="127" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="127" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="127" x2="-7.62" y2="127" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="127" x2="-7.62" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="/OPEN_LED"/>
-<wire x1="-15.24" y1="127" x2="-25.4" y2="127" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="127" x2="-25.4" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
-<junction x="33.02" y="165.1"/>
+<wire x1="-55.88" y1="127" x2="-66.04" y2="127" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="127" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="165.1" x2="-7.62" y2="165.1" width="0.1524" layer="91"/>
+<junction x="-7.62" y="165.1"/>
 <junction x="91.44" y="165.1"/>
 <junction x="147.32" y="165.1"/>
 <label x="165.1" y="165.1" size="1.778" layer="95"/>
-<wire x1="-66.04" y1="165.1" x2="-25.4" y2="165.1" width="0.1524" layer="91"/>
-<junction x="-25.4" y="165.1"/>
+<junction x="-66.04" y="165.1"/>
 </segment>
 </net>
 <net name="PWM0" class="0">
@@ -14822,11 +14795,11 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <wire x1="25.4" y1="243.84" x2="40.64" y2="243.84" width="0.1524" layer="91"/>
 <label x="27.94" y="243.84" size="1.778" layer="95"/>
 <wire x1="40.64" y1="243.84" x2="40.64" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="231.14" x2="-30.48" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="231.14" x2="-30.48" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="231.14" x2="-71.12" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="231.14" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PWM"/>
-<wire x1="-15.24" y1="121.92" x2="-30.48" y2="121.92" width="0.1524" layer="91"/>
-<label x="-25.4" y="121.92" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="121.92" x2="-71.12" y2="121.92" width="0.1524" layer="91"/>
+<label x="-66.04" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -14835,11 +14808,11 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <wire x1="25.4" y1="246.38" x2="43.18" y2="246.38" width="0.1524" layer="91"/>
 <label x="27.94" y="246.38" size="1.778" layer="95"/>
 <wire x1="43.18" y1="246.38" x2="43.18" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="228.6" x2="27.94" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="228.6" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="228.6" x2="-12.7" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="228.6" x2="-12.7" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="PWM"/>
-<wire x1="43.18" y1="121.92" x2="27.94" y2="121.92" width="0.1524" layer="91"/>
-<label x="33.02" y="121.92" size="1.778" layer="95"/>
+<wire x1="2.54" y1="121.92" x2="-12.7" y2="121.92" width="0.1524" layer="91"/>
+<label x="-7.62" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWM2" class="0">
@@ -15365,6 +15338,46 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <segment>
 <pinref part="X1" gate="B" pin="1"/>
 <pinref part="PTC3" gate="1" pin="2"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="134.62" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="SHDN"/>
+<wire x1="66.04" y1="137.16" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="132.08" x2="152.4" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="132.08" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="149.86" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="149.86" x2="73.66" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="137.16" x2="66.04" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="SHDN"/>
+<wire x1="96.52" y1="149.86" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="132.08" x2="101.6" y2="132.08" width="0.1524" layer="91"/>
+<junction x="66.04" y="137.16"/>
+<junction x="96.52" y="149.86"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-91.44" y1="134.62" x2="-91.44" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="137.16" x2="-91.44" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="149.86" x2="-83.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="149.86" x2="-83.82" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-83.82" y1="137.16" x2="-91.44" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-91.44" y="137.16"/>
+<pinref part="U1" gate="G$1" pin="SHDN"/>
+<wire x1="-60.96" y1="149.86" x2="-60.96" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="132.08" x2="-55.88" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="149.86" x2="-2.54" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="SHDN"/>
+<wire x1="-2.54" y1="149.86" x2="-2.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="132.08" x2="2.54" y2="132.08" width="0.1524" layer="91"/>
+<junction x="-60.96" y="149.86"/>
 </segment>
 </net>
 </nets>
