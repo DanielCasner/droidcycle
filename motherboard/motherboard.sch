@@ -14333,6 +14333,9 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="GND35" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
+<part name="T3" library="transistor" deviceset="2N3904" device=""/>
+<part name="GND36" library="supply1" deviceset="GND" device=""/>
+<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14480,6 +14483,9 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <instance part="R20" gate="G$1" x="-177.8" y="281.94" rot="R270"/>
 <instance part="GND35" gate="1" x="-177.8" y="274.32"/>
 <instance part="P+8" gate="1" x="-177.8" y="304.8"/>
+<instance part="T3" gate="G1" x="-238.76" y="198.12" rot="MR0"/>
+<instance part="GND36" gate="1" x="-241.3" y="190.5"/>
+<instance part="P+9" gate="1" x="-241.3" y="215.9"/>
 </instances>
 <busses>
 </busses>
@@ -14693,6 +14699,10 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <segment>
 <pinref part="R20" gate="G$1" pin="2"/>
 <pinref part="GND35" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G1" pin="E"/>
+<pinref part="GND36" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V+" class="0">
@@ -14935,6 +14945,10 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="-241.3" y1="213.36" x2="-241.3" y2="210.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="/LED_FAULT" class="0">
 <segment>
@@ -15072,9 +15086,9 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <wire x1="-243.84" y1="251.46" x2="-215.9" y2="251.46" width="0.1524" layer="91"/>
 <label x="-241.3" y="251.46" size="1.778" layer="95"/>
 <wire x1="-215.9" y1="251.46" x2="-215.9" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="-215.9" y1="220.98" x2="-114.3" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="220.98" x2="-114.3" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="281.94" x2="-114.3" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="-215.9" y1="220.98" x2="-116.84" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="220.98" x2="-116.84" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="281.94" x2="-116.84" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THROTTLE_OUT" class="0">
@@ -15116,10 +15130,10 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <net name="THROTTLE_OUT_RAW" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$18"/>
-<wire x1="-38.1" y1="248.92" x2="-111.76" y2="248.92" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="248.92" x2="-111.76" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="248.92" x2="-114.3" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="248.92" x2="-114.3" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="OA1" gate="G$2" pin="+IN"/>
-<wire x1="-111.76" y1="213.36" x2="-182.88" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="213.36" x2="-182.88" y2="213.36" width="0.1524" layer="91"/>
 <label x="-60.96" y="248.92" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15557,6 +15571,24 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <wire x1="-172.72" y1="271.78" x2="-172.72" y2="289.56" width="0.1524" layer="91"/>
 <wire x1="-172.72" y1="289.56" x2="-177.8" y2="289.56" width="0.1524" layer="91"/>
 <junction x="-177.8" y="289.56"/>
+</segment>
+</net>
+<net name="MISSILE_LED" class="0">
+<segment>
+<pinref part="T3" gate="G1" pin="C"/>
+<wire x1="-241.3" y1="203.2" x2="-241.3" y2="205.74" width="0.1524" layer="91"/>
+<label x="-241.3" y="208.28" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$10"/>
+<wire x1="-38.1" y1="269.24" x2="-111.76" y2="269.24" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="269.24" x2="-111.76" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="170.18" x2="-223.52" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G1" pin="B"/>
+<wire x1="-223.52" y1="170.18" x2="-223.52" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-223.52" y1="198.12" x2="-236.22" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

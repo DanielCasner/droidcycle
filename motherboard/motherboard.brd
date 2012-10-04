@@ -2718,6 +2718,7 @@ design rules under a new name.</description>
 <element name="C1" library="rcl" package="C050-025X075" value="0.1uF" x="-118.11" y="-74.93"/>
 <element name="R8" library="rcl" package="0204/5" value="10k" x="-119.38" y="-80.01"/>
 <element name="R20" library="rcl" package="0204/5" value="10k" x="-119.38" y="-86.36"/>
+<element name="T3" library="transistor" package="TO92" value="2N3904" x="-119.38" y="-92.71"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2769,6 +2770,8 @@ design rules under a new name.</description>
 <contactref element="ISIC" pad="9"/>
 <contactref element="ISIC" pad="8"/>
 <contactref element="R20" pad="2"/>
+<contactref element="T3" pad="3"/>
+<wire x1="-116.84" y1="-86.36" x2="-120.65" y2="-92.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-115.57" y1="-74.93" x2="-116.84" y2="-86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.554" y1="-69.85" x2="-115.57" y2="-74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-114.554" y1="-66.04" x2="-114.554" y2="-69.85" width="0" layer="19" extent="1-1"/>
@@ -3232,6 +3235,14 @@ design rules under a new name.</description>
 <contactref element="ISIC" pad="1"/>
 <wire x1="-116.84" y1="-80.01" x2="-121.92" y2="-86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-120.38" y1="-49.39" x2="-116.84" y2="-80.01" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="MISSILE_LED">
+<contactref element="T3" pad="1"/>
+</signal>
+<signal name="N$22">
+<contactref element="U$1" pad="10"/>
+<contactref element="T3" pad="2"/>
+<wire x1="74.93" y1="25.4" x2="-119.38" y2="-90.805" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
