@@ -14952,10 +14952,9 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 </net>
 <net name="/LED_FAULT" class="0">
 <segment>
-<wire x1="-66.04" y1="284.48" x2="-38.1" y2="284.48" width="0.1524" layer="91"/>
-<label x="-60.96" y="284.48" size="1.778" layer="95"/>
-<wire x1="-66.04" y1="284.48" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
+<label x="-60.96" y="271.78" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="/OPEN_LED"/>
+<wire x1="-66.04" y1="271.78" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="127" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -14977,6 +14976,8 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <junction x="147.32" y="165.1"/>
 <label x="165.1" y="165.1" size="1.778" layer="95"/>
 <junction x="-66.04" y="165.1"/>
+<pinref part="U$1" gate="G$1" pin="P$9"/>
+<wire x1="-38.1" y1="271.78" x2="-66.04" y2="271.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM0" class="0">
@@ -15580,7 +15581,7 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <label x="-241.3" y="208.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="INDICATOR" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$10"/>
 <wire x1="-38.1" y1="269.24" x2="-111.76" y2="269.24" width="0.1524" layer="91"/>
@@ -15589,6 +15590,7 @@ The LTC®2990 is used to monitor system temperatures, voltages and currents. Thr
 <pinref part="T3" gate="G1" pin="B"/>
 <wire x1="-223.52" y1="170.18" x2="-223.52" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="-223.52" y1="198.12" x2="-236.22" y2="198.12" width="0.1524" layer="91"/>
+<label x="-60.96" y="269.24" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
